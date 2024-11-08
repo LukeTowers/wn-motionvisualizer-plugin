@@ -1,0 +1,16 @@
+{
+  "assets/src/css/luketowers-motionvisualizer.css": {
+    "file": "assets/luketowers-motionvisualizer-B-6ecLHR.css",
+    "src": "assets/src/css/luketowers-motionvisualizer.css",
+    "isEntry": true
+  },
+  "assets/src/js/luketowers-motionvisualizer.js": {
+    "file": "assets/luketowers-motionvisualizer-BUx5dlDr.js",
+    "name": "luketowers-motionvisualizer",
+    "src": "assets/src/js/luketowers-motionvisualizer.js",
+    "isEntry": true,
+    "css": [
+      "assets/luketowers-motionvisualizer-B-6ecLHR.css"
+    ]
+  }
+}

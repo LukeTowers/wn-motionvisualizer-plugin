@@ -1,0 +1,12 @@
+{
+    "name": "luketowers/wn-motionvisualizer-plugin",
+    "type": "winter-plugin",
+    "description": "Experiment in visualizing Wrist Motion data from an Apple Watch",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Luke Towers",
+            "email": "luke@luketowers.ca"
+        }
+    ]
+}

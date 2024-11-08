@@ -1,0 +1,54 @@
+<div class="bg-gray-100 flex flex-col items-center py-10">
+    <!-- Page Header -->
+    <header class="text-center mb-8">
+        <h1 class="text-3xl font-bold text-gray-800">3D Motion Visualization</h1>
+        <p class="text-gray-600 mt-2">Upload your CSV data files to visualize motion in 3D space</p>
+    </header>
+
+    <!-- File Upload Section -->
+    <div class="w-full max-w-md bg-white shadow-md rounded-lg p-6 mb-8">
+        <h2 class="text-xl font-semibold text-gray-700 mb-4">Upload Data Files</h2>
+        <input id="fileInput" type="file" accept=".csv" class="block w-full text-gray-800 mb-4" multiple>
+    </div>
+
+    <!-- Play/Pause Button -->
+    <div class="mb-4">
+        <button id="playPauseButton" class="bg-green-500 hover:bg-green-600 text-white font-semibold py-2 px-4 rounded">
+            Play
+        </button>
+    </div>
+
+    <!-- Timeline Scrubber -->
+    <div class="w-full max-w-4xl bg-white shadow-md rounded-lg p-4 mb-8">
+        <input type="range" id="timelineSlider" min="0" max="100" value="0" class="w-full">
+    </div>
+
+    <!-- Charts Container -->
+    <div class="w-full max-w-4xl bg-white shadow-md rounded-lg p-4 mb-8">
+        <h2 class="text-xl text-center font-semibold text-gray-700 mb-4">Data Visualization</h2>
+        <!-- Data Display -->
+        <div id="dataDisplay" class="text-gray-700 text-md text-center font-semibold mt-4">
+            Acceleration: X=0, Y=0, Z=0<br>
+            Rotation Rate: X=0, Y=0, Z=0
+        </div>
+        <div class="flex flex-wrap -mx-2">
+            <!-- Acceleration Chart -->
+            <div class="w-full md:w-1/2 px-2 mb-4 md:mb-0">
+                <h3 class="text-center text-lg font-semibold text-gray-700 mb-2">Acceleration Data</h3>
+                <canvas id="accelerationChart" class="w-full h-64"></canvas>
+            </div>
+            <!-- Rotation Chart -->
+            <div class="w-full md:w-1/2 px-2">
+                <h3 class="text-center text-lg font-semibold text-gray-700 mb-2">Rotation Data</h3>
+                <canvas id="rotationChart" class="w-full h-64"></canvas>
+            </div>
+        </div>
+    </div>
+
+    <!-- 3D Visualization Canvas -->
+    <div class="w-full max-w-4xl h-96 bg-white shadow-md rounded-lg p-4">
+        <h2 class="text-xl font-semibold text-gray-700 mb-4 text-center">3D Visualization</h2>
+        <div id="frameCounter" class="text-gray-700 text-lg font-semibold mt-4 text-center">Frame count: 0</div>
+        <div id="threeCanvas" class="w-full h-full bg-gray-200 rounded-lg"></div>
+    </div>
+</div>
